@@ -16,6 +16,8 @@ const ctx = canvas.getContext("2d");
             plot(x, y, false);
         }
     }
+
+    // -=-=-=-Write your code between this-=-=-=- \\
     //#region Eyes
     await plotLine(5, 5, 6, 5);
     await plotLine(5, 6, 6, 6);
@@ -27,6 +29,8 @@ const ctx = canvas.getContext("2d");
     await plotLine(4, size[1] - 6, 4, size[1] - 6);
     await plotLine(size[0] - 5, size[1] - 6, size[0] - 5, size[1] - 6);
     //#endregion
+    // -=-=-=-and this-=-=-=- \\
+
     ncp.copy(canvas.toDataURL());
 })();
 

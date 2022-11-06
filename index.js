@@ -47,6 +47,7 @@ const ctx = canvas.getContext("2d");
             plot(x, y, false);
         }
     }
+    // -=-=-=-Write your code between this-=-=-=- \\
     //#region Eyes
     yield plotLine(5, 5, 6, 5);
     yield plotLine(5, 6, 6, 6);
@@ -58,6 +59,7 @@ const ctx = canvas.getContext("2d");
     yield plotLine(4, size[1] - 6, 4, size[1] - 6);
     yield plotLine(size[0] - 5, size[1] - 6, size[0] - 5, size[1] - 6);
     //#endregion
+    // -=-=-=-and this-=-=-=- \\
     ncp.copy(canvas.toDataURL());
 }))();
 function plotLineLow(x0, y0, x1, y1) {
